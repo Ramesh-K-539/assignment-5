@@ -1,0 +1,266 @@
+.jobs-container {
+  min-height: 100%;
+  width: 100%;
+  padding: 0px;
+  background-color: #000000;
+}
+
+.jobs-inside-container {
+  min-height: 93vh;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.side-nav-bar-container {
+  height: 100%;
+  width: 25%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-line {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  margin-top: 30px;
+  margin-bottom: 23px;
+}
+
+.filters-heading {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  font-family: 'roboto';
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.ul-list {
+  padding-left: 0px;
+  margin-left: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.list-item {
+  list-style-type: none;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+
+.checkbox {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.label-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.jobs-list-container {
+  height: 100%;
+  width: 72%;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  width: 400px;
+  border: 1px solid #7e858e;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.search-bar {
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  width: 360px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.search-btn {
+  height: 36px;
+  width: 56px;
+  border: none;
+  border-radius: 6px;
+  background-color: #272727;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.ul-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.job-list-item {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+
+.company-and-job-name {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  height: 73px;
+  width: 70px;
+  margin-right: 20px;
+}
+
+.job-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'roboto';
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0px;
+}
+.rating {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.rating-img {
+  height: 19px;
+  width: 19px;
+  color: #fbbf24;
+  margin-right: 8px;
+}
+
+.location-and-others-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.location-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location-icon {
+  height: 20px;
+  width: 20px;
+  color: #ffffff;
+  margin-right: 7px;
+}
+
+.location-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'roboto';
+  margin-right: 25px;
+}
+
+.hr-line {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+}
+
+.job-description {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: 'roboto';
+}
+
+.description-paragraph {
+  color: #f8fafc;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'roboto';
+}
+
+.failure-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.failure-img {
+  height: 300px;
+  width: 420px;
+}
+
+.failure-heading {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'roboto';
+}
+
+.failure-description {
+  color: #f8fafc;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'roboto';
+}
+
+.loading {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.retry-button {
+  height: 36px;
+  width: 80px;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'roboto';
+  cursor: pointer;
+  outline: none;
+}
+
+.link-item {
+  text-decoration: none;
+}

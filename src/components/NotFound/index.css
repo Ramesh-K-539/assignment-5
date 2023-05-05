@@ -26,3 +26,7 @@
   font-weight: 400;
   font-family: 'roboto';
 }
+
+.link-item {
+  text-decoration: none;
+}

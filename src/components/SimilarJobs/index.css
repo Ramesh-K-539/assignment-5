@@ -14,3 +14,27 @@
 .add-description {
   width: 290px;
 }
+
+.location-cont {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location-icon {
+  height: 20px;
+  width: 20px;
+  color: #ffffff;
+  margin-right: 7px;
+}
+
+.location-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'roboto';
+  margin-right: 25px;
+}

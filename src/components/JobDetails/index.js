@@ -118,7 +118,7 @@ class JobDetails extends Component {
           <div className="company-and-job-name">
             <img
               src={companyLogoUrl}
-              alt="company logo"
+              alt="job details company logo"
               className="company-logo"
             />
             <div>
@@ -133,11 +133,15 @@ class JobDetails extends Component {
             <div className="location-cont">
               <div className="location-cont">
                 <TiLocation className="location-icon" />
-                <p className="location-text">{location}</p>
+                <p className="location-text" key="location">
+                  {location}
+                </p>
               </div>
               <div className="location-cont">
                 <BsFillBriefcaseFill className="location-icon" />
-                <p className="location-text">{employmentType}</p>
+                <p className="location-text" key="employment_type">
+                  {employmentType}
+                </p>
               </div>
             </div>
             <p className="rating">{packagePerAnnum}</p>
@@ -179,7 +183,7 @@ class JobDetails extends Component {
         <h1 className="similar-jobs-text">Similar Jobs</h1>
         <ul className="similar-jobs-ul-list">
           {similarJobsList.map(eachJob => (
-            <SimilarJobs similarJobsDetails={eachJob} />
+            <SimilarJobs similarJobsDetails={eachJob} key={eachJob.id} />
           ))}
         </ul>
       </>

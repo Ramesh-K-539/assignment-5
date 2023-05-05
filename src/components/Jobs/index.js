@@ -83,10 +83,9 @@ class Jobs extends Component {
       method: 'GET',
     }
     const response = await fetch(url, options)
-    console.log(response)
+
     if (response.ok === true) {
       const fetchedData = await response.json()
-      console.log(fetchedData)
       const updatedList = fetchedData.jobs.map(eachItem => ({
         companyLogoUrl: eachItem.company_logo_url,
         employmentType: eachItem.employment_type,
@@ -147,13 +146,17 @@ class Jobs extends Component {
         />
         <h1 className="failure-heading">No Jobs Found</h1>
         <p className="failure-description">
-          We could not find any jobs Try others filters
+          We could not find any jobs. Try other filters
         </p>
       </div>
     ) : (
       <ul className="ul-list">
         {jobsList.map(eachJob => (
-          <Link to={`/jobs/${eachJob.id}`} className="link-item">
+          <Link
+            to={`/jobs/${eachJob.id}`}
+            className="link-item"
+            key={eachJob.id}
+          >
             <li className="job-list-item" key={eachJob.id}>
               <div className="company-and-job-name">
                 <img
@@ -169,8 +172,8 @@ class Jobs extends Component {
                   </div>
                 </div>
               </div>
-              <div className="location-and-others-container">
-                <div className="location-cont">
+              <ul className="location-and-others-container">
+                <li className="location-cont" key={eachJob.employmentType}>
                   <div className="location-cont">
                     <TiLocation className="location-icon" />
                     <p className="location-text">{eachJob.location}</p>
@@ -179,9 +182,11 @@ class Jobs extends Component {
                     <BsFillBriefcaseFill className="location-icon" />
                     <p className="location-text">{eachJob.employmentType}</p>
                   </div>
-                </div>
-                <p className="rating">{eachJob.packagePerAnnum}</p>
-              </div>
+                </li>
+                <li className="salary-list-item" key={eachJob.packagePerAnnum}>
+                  <p className="rating">{eachJob.packagePerAnnum}</p>
+                </li>
+              </ul>
               <hr className="hr-line" />
               <h1 className="job-description">Description</h1>
               <p className="description-paragraph">{eachJob.jobDescription}</p>

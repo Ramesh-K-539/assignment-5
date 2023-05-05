@@ -1,6 +1,6 @@
 import './App.css'
 
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 
 import LoginForm from './components/LoginForm'
 import Home from './components/Home'
@@ -56,6 +56,7 @@ const App = () => (
     <ProtectedRoute exact path="/Jobs" component={Jobs} />
     <ProtectedRoute exact path="/jobs/:id" component={JobDetails} />
     <Route path="/not-found" component={NotFound} />
+    <Redirect to="/not-found" compo={NotFound} />
   </Switch>
 )
 

@@ -164,12 +164,23 @@
 }
 
 .location-and-others-container {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.salary-list-item {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
 .location-cont {
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;

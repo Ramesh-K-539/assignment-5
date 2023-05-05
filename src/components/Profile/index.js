@@ -23,6 +23,7 @@ class Profile extends Component {
 
     if (response.ok === true) {
       const fetchedData = await response.json()
+      console.log(fetchedData)
       const details = fetchedData.profile_details
       const updatedData = {
         name: details.name,
@@ -49,8 +50,13 @@ class Profile extends Component {
         </button>
       </div>
     ) : (
-      <div className="profile-container">
-        <img src={profileImageUrl} alt="profile" className="profile-pic" />
+      <div className="profile-container" key={profileImageUrl}>
+        <img
+          src={profileImageUrl}
+          className="profile-pic"
+          alt="profile"
+          key={profileImageUrl}
+        />
         <h1 className="employee-name">{name}</h1>
         <p className="bio">{shortBio}</p>
       </div>
